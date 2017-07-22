@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+*{margin:0;}
+body{
+    margin: 0px;
+    font-family:"Roboto",sans-serif;
+    overflow: hidden;
+    position: relative;
+    top: 0px; left:0px;
+}
+div{
+    //border: 1px solid black;
+}
+#overlay{
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255,1);
+    transition: opacity 0.3s ease-in-out;
+    padding: 0px;
+}
+#progress{
+    height:10px;
+    background: #ebd1bc;
+    position:absolute;
+    width:0;
+    top:50%;
+    left: 0px;
+    margin: 0px;
+    //box-shadow: 2px 0px 0px 0px #dba46e;
+}
+.progress::after{
+    position: absolute;
+    right:0px;width:80px;height:10px;top:0px;
+    background: #4b2d11;
+    content: '';
+    border-radius: 2000px 2000px 2000px 2000px;
+}
+#progstat{
+    font-size:30px;
+    position:absolute;
+    top:50%;
+    margin-top:-60px;
+    width:100%;
+    text-align:center;
+    color: #b46b27;
+    font-weight: 600;
+    font-family:"Roboto",sans-serif;
+}
+.rounded{
+    border-radius: 0px 2000px 2000px 0px;
+}
+.backgroundimage{
+    width: 100%;
+    height:100%;
+    position:fixed;
+    top:0px;left:0px;
+    z-index:-999999;
+}
+.content{
+    font-family:"Roboto",sans-serif;
+    color: #ffffff;
+    float: left;
+    position: absolute;
+    padding:10px;
+}
+.header{
+    text-transform: uppercase;
+    font-family:"Exo",sans-serif;
+    font-size: 80px;
+    text-align: center;
+    overflow: visible;
+    cursor: default;
+}
+.header2{
+    color: #482807;
+    font-weight: 900;
+}
+.headerchar2{
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.74);
+}
+.headerchar3{
+    margin: -9px;
+}
+.headerchar{
+    margin: -9px;
+    text-shadow: 0px 0px #000000;
+    -webkit-transition: all 0.8s ease-in-out,text-shadow 0.8s ease-out;
+    -moz-transition: all 0.8s ease-in-out,text-shadow 0.8s ease-out;
+    -ms-transition: all 0.8s ease-in-out,text-shadow 0.8s ease-out;
+    -o-transition: all 0.8s ease-in-out,text-shadow 0.8s ease-out;
+    transition: all 0.8s ease-in-out,text-shadow 0.8s ease-out;
+}
+.noselect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.body{
+    padding:10px;
+}
+.trans{
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.trans2{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.transspl{
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    -ms-transition: top 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
+}
+.trans3{
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.inp{
+    height: 45px;
+    width: 100%;
+    //box-shadow: 5px 5px 5px rgba(68, 37, 7, 0.77);
+    border: 2px solid #995e21;
+    border-radius: 5000px;
+    margin: 0px;
+    outline:none;
+    font-family: "Roboto",sans-serif;
+    padding-left:15px;
+    padding-right: 15px;
+    font-size: 22px;
+    color: #995e21;
+    position:relative;
+    z-index:5;
+}
+.tbl{
+    width:100%;
+}
+.leftalign{
+    text-align: left;
+    font-family: "Exo","Roboto",sans-serif;
+    font-weight:200;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+}
+.rightalign{
+    text-align: center;
+}
+.btnwrapper{
+    text-align: center;
+}
+td{
+    //border: 1px solid black;
+    overflow: visible;
+    padding:5px;
+}
+.bttn{
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-bottom: 2px;
+    background: #f2cdaa;
+    border-radius: 1000px;
+    border: 2px solid #995e21;
+    color: #995e21;
+    font-family: "Roboto", sans-serif;
+    font-size:24px;
+    outline:none;
+}
+.bttn:hover{
+    background-color: #f2c083;
+    border: 2px solid #994f00;
+    color: #994f00;
+}
+.bttn:active{
+    background-color: #f0ad60;
+    border: 2px solid #995910;
+    color: #995910;
+    -webkit-transform: scale(0.99);
+    -moz-transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    -o-transform: scale(0.99);
+    transform: scale(0.99);
+}
+.sideleft{
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.78);
+    background: linear-gradient(rgba(255, 255, 255, 0.0),rgba(255, 255, 255, 0.8));
+    width:5px;height:100%;
+    bottom:0;left:0;margin-left:-25px;
+    border-radius:2000px 0px 0px 2000px;
+    //display:none;
+}
+.sideright{
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.78);
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.0));
+    width:5px;height:100%;
+    top:0;right:0;margin-right:-25px;
+    border-radius:0px 2000px 2000px 0px;
+    //display:none;
+}
+.sidetop{
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.78);
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.0));
+    height:5px;width:100%;
+    top:0;left:0;margin-top:-25px;
+    border-radius:2000px 2000px 0px 0px;
+    display:none;
+}
+.sidebottom{
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.78);
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.0),rgba(255, 255, 255, 0.8));
+    height:5px;width:100%;
+    bottom:0;right:0;margin-bottom:-25px;
+    border-radius:0px 0px 2000px 2000px;
+    display:none;
+}
+.signupform{
+    //display:none;
+    float: left;
+    position: relative;
+    top:0px;left:0px;
+    overflow: hidden;
+}
+.err{
+    width:100%;
+    text-align:center;
+    font-family: "Roboto",sans-serif;
+    font-size:18px;
+    color: #ffee9a;
+    text-shadow: 2px 2px 2px rgba(76, 73, 45, 0.93);
+    font-weight:300;
+    text-transform: capitalize;
+    overflow: hidden;
+    position:relative;z-index:5000;
+    word-wrap: break-word;
+    padding-bottom: 15px;
+}
+.lol{
+    width:100%;
+    height:0px;
+    opacity:0;
+}
+.loginform{
+    //display: none;
+    float: left;
+    position: relative;
+    top:0px;left:0px;
+    overflow:hidden;
+}
+.widthclass{
+    width: 0px;
+}
+.heightclass{
+    height: 0px;
+}
+.bring{
+    float:left;
+    background: rgba(121, 66, 17, 0.59);
+    cursor: pointer;
+    font-family:"Roboto",sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding:10px;
+    padding-top: 12px;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top:-2px;
+    margin-right: 20px;
+}
+.bring:hover{
+    background: rgba(121, 66, 17, 0.84);
+}
+.redirect{
+    position: absolute;
+    visibility: hidden;
+    left:0%;
+}
+@media screen and (max-width: 550px){
+    .header{
+        text-transform: uppercase;
+        font-family:"Exo",sans-serif;
+        font-size: 75px;
+        overflow: visible;
+        text-align: center;
+    }
+    .header2{
+        color: #482807;
+        font-weight: 900;
+    }
+    .content{
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+}
+@media screen and (max-width: 480px){
+    .header{
+        text-transform: uppercase;
+        font-family:"Exo",sans-serif;
+        font-size: 50px;
+        overflow: visible;
+        text-align: center;
+    }
+    .header2{
+        color: #482807;
+        font-weight: 900;
+    }
+}
+@media screen and (max-width: 390px){
+    .header{
+        text-transform: uppercase;
+        font-family:"Exo",sans-serif;
+        font-size: 58px;
+        overflow: visible;
+        text-align: center;
+    }
+    .header2{
+        color: #482807;
+        font-weight: 900;
+    }
+}
