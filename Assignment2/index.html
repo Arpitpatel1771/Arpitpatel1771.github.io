@@ -1,0 +1,351 @@
+<html>
+	<head>
+		<title>SpringFest</title>
+		<style>
+			@media only screen and (max-width:1034px){
+				body { 
+					overflow-x: visible; font-family :Helvetica, Arial, sans-serif;margin : 0px;background-color:#ffffff;
+				}
+				table.sf { 
+					background-color: #3c5a98;height : 83px; width : 1019px;border:0px;position :absolute;left:0px;
+					background: -webkit-linear-gradient(#5469a0,  #3b5997, #3c5a98); 
+					background: -o-linear-gradient(#5469a0,   #3b5997,  #3c5a98);
+					background: -moz-linear-gradient(#5469a0,    #3b5997, #3c5a98); 
+					background: linear-gradient(#5469a0,   #3b5997,  #3c5a98);
+				}
+				table.con{
+					background-color:#d7dae9;height : 477px; width : 1019px;border:0px;position :absolute;left:0px;top:83px;
+					background: -webkit-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9); 
+					background: -o-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9);
+					background: -moz-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9); 
+					background: linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9);
+				}
+				table.footer{
+					position:absolute;left:0px;font-size:11px;color:#737373; width : 1000px;position :absolute;left:0px;top:560px;
+				}
+				input.inp1{
+					height : 23px; width : 150px; border : 1px solid #1f2f50;padding-left:3px;font-size:12px;
+				}
+				div.stuff{
+					font-size : 20px;line-height:29px; color : #0e385f;font-weight:bold; word-spacing : -1;
+					position: absolute;left:50%;margin-left:-500px;margin-top:-197px;
+				}
+				input.inp2{
+					height : 38px; border-radius:5px; border : 1px solid #cacbd0;font-size:18px;padding-left: 10px;color:#a8a8a8;
+				}
+				div.terms{
+					font-size: 11px;color:#777777;line-height:15px;width:320px;
+				}
+				a{
+					text-decoration:none;color:#365899;
+				}
+				a.footer{
+					font-size:12px;
+				}
+				a.text1{
+					font-size : 12px;color : white;				
+				}
+				a.hov_und:hover,a.footer:hover{
+					text-decoration:underline;
+				}
+				#create{
+					height : 40px;width:200px;border-radius:5px;border:1px solid #446142;
+					background: -webkit-linear-gradient(#62ab4f, #558a3a); 
+					background: -o-linear-gradient(#62ab4f, #558a3a);
+					background: -moz-linear-gradient(#62ab4f, #558a3a); 
+					background: linear-gradient(#62ab4f, #558a3a);
+					box-shadow:inset 0px 1px 1px #9ad287; color:#ffffff;font-weight:bold;font-size:19px;font-family:'Arial';text-shadow: 0px 1px 2px #2d5124;
+				}
+				#create:active{position:relative;
+					top:1px;
+				}
+				img.logo{
+					width : 240px; position : absolute; left : 50%; top : 32px; margin-left : -497px; 
+				}
+				div.form1{
+					position : absolute ; left : 50%;  top : 12px; margin-left : 102px;
+				}
+				input.login{
+					height : 24px;border : 1px solid #224587; color : white; 
+					background-color:#4768b3; font-size : 12px; font-weight : 700; border-radius : 2px;
+				}
+				#forg{
+					font-size : 12px;color : #98b0d9;padding-top: 2px;
+				}
+				table.form2{
+					position : absolute;left:50%;margin-left: 80px;margin-top:-220px;cellspacing:0px;cellpadding:0px;
+				}
+			}
+			@media only screen and (min-width: 1035px){
+				body { 
+					overflow-x: visible; font-family :Helvetica, Arial, sans-serif;margin : 0px;background-color:#ffffff;
+				}
+				table.sf { 
+					background-color: #3c5a98;height : 83px; width : 100%;border:0px;
+					background: -webkit-linear-gradient(#5469a0,  #3b5997, #3c5a98); 
+					background: -o-linear-gradient(#5469a0,   #3b5997,  #3c5a98);
+					background: -moz-linear-gradient(#5469a0,    #3b5997, #3c5a98); 
+					background: linear-gradient(#5469a0,   #3b5997,  #3c5a98);
+				}
+				table.con{
+					background-color:#d7dae9;height : 477px; width : 100%;border:0px;
+					background: -webkit-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9); 
+					background: -o-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9);
+					background: -moz-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9); 
+					background: linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9);
+				}
+				table.footer{
+					position:absolute;left:50%;font-size:11px;color:#737373;margin-left : -510px; width : 1000px;
+				}
+				input.inp1{
+					height : 23px; width : 150px; border : 1px solid #1f2f50;padding-left:3px;font-size:12px;
+				}
+				div.stuff{
+					font-size : 20px;line-height:29px; color : #0e385f;font-weight:bold; word-spacing : -1;
+					position: absolute;left:50%;margin-left:-500px;margin-top:-197px;
+				}
+				input.inp2{
+					height : 38px; border-radius:5px; border : 1px solid #cacbd0;font-size:18px;padding-left: 10px;color:#a8a8a8;
+				}
+				div.terms{
+					font-size: 11px;color:#777777;line-height:15px;width:320px;
+				}
+				a{
+					text-decoration:none;color:#365899;
+				}
+				a.footer{
+					font-size:12px;
+				}
+				a.text1{
+					font-size : 12px;color : white;				
+				}
+				a.hov_und:hover,a.footer:hover{
+					text-decoration:underline;
+				}
+				#create{
+					height : 40px;width:200px;border-radius:5px;border:1px solid #446142;
+					background: -webkit-linear-gradient(#62ab4f, #558a3a); 
+					background: -o-linear-gradient(#62ab4f, #558a3a);
+					background: -moz-linear-gradient(#62ab4f, #558a3a); 
+					background: linear-gradient(#62ab4f, #558a3a);
+					box-shadow:inset 0px 1px 1px #9ad287; color:#ffffff;font-weight:bold;font-size:19px;font-family:'Arial';text-shadow: 0px 1px 2px #2d5124;
+				}
+				#create:active{position:relative;
+					top:1px;
+				}
+				img.logo{
+					width : 240px; position : absolute; left : 50%; top : 32px; margin-left : -497px; 
+				}
+				div.form1{
+					position : absolute ; left : 50%;  top : 12px; margin-left : 102px;
+				}
+				input.login{
+					height : 24px;border : 1px solid #224587; color : white; 
+					background-color:#4768b3; font-size : 12px; font-weight : 700; border-radius : 2px;
+				}
+				#forg{
+					font-size : 12px;color : #98b0d9;padding-top: 2px;
+				}
+				table.form2{
+					position : absolute;left:50%;margin-left: 80px;margin-top:-220px;cellspacing:0px;cellpadding:0px;
+				}
+			}
+			@media only screen and (min-width:3000px){
+				body { 
+					overflow-x: visible; font-family :Helvetica, Arial, sans-serif;margin : 0px;background-color:#ffffff;
+				}
+				table.sf { 
+					background-color: #3c5a98;height : 90px; width : 100%;border:0px;
+					background: -webkit-linear-gradient(#5469a0,  #3b5997, #3c5a98); 
+					background: -o-linear-gradient(#5469a0,   #3b5997,  #3c5a98);
+					background: -moz-linear-gradient(#5469a0,    #3b5997, #3c5a98); 
+					background: linear-gradient(#5469a0,   #3b5997,  #3c5a98);
+				}
+				table.con{
+					background-color:#d7dae9;height : 650px; width : 100%;border:0px;
+					background: -webkit-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9); 
+					background: -o-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9);
+					background: -moz-linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9); 
+					background: linear-gradient(#ffffff, #f7f8fa 20%,  #d7dae9);
+				}
+				table.footer{
+					position:absolute;left:50%;font-size:11px;color:#737373;margin-left : -510px; width : 1000px;
+				}
+				input.inp1{
+					height : 23px; width : 150px; border : 1px solid #1f2f50;padding-left:3px;font-size:12px;
+				}
+				div.stuff{
+					font-size : 20px;line-height:29px; color : #0e385f;font-weight:bold; word-spacing : -1;
+					position: absolute;left:50%;margin-left:-500px;margin-top:-297px;
+				}
+				input.inp2{
+					height : 38px; border-radius:5px; border : 1px solid #cacbd0;font-size:18px;padding-left: 10px;color:#a8a8a8;
+				}
+				div.terms{
+					font-size: 20px;color:#777777;line-height:32px;width:320px;
+				}
+				a{
+					text-decoration:none;color:#365899;
+				}
+				a.footer{
+					font-size:12px;
+				}
+				a.text1{
+					font-size : 12px;color : white;				
+				}
+				a.hov_und:hover,a.footer:hover{
+					text-decoration:underline;
+				}
+				#create{
+					height : 40px;width:200px;border-radius:5px;border:1px solid #446142;
+					background: -webkit-linear-gradient(#62ab4f, #558a3a); 
+					background: -o-linear-gradient(#62ab4f, #558a3a);
+					background: -moz-linear-gradient(#62ab4f, #558a3a); 
+					background: linear-gradient(#62ab4f, #558a3a);
+					box-shadow:inset 0px 1px 1px #9ad287; color:#ffffff;font-weight:bold;font-size:19px;font-family:'Arial';text-shadow: 0px 1px 2px #2d5124;
+				}
+				#create:active{position:relative;
+					top:1px;
+				}
+				img.logo{
+					width : 240px; position : absolute; left : 50%; top : 32px; margin-left : -497px; 
+				}
+				div.form1{
+					position : absolute ; left : 50%;  top : 12px; margin-left : 102px;
+				}
+				input.login{
+					height : 24px;border : 1px solid #224587; color : white; 
+					background-color:#4768b3; font-size : 12px; font-weight : 700; border-radius : 2px;
+				}
+				#forg{
+					font-size : 12px;color : #98b0d9;padding-top: 2px;
+				}
+				table.form2{
+					position : absolute;left:50%;margin-left: 80px;margin-top:-320px;cellspacing:0px;cellpadding:0px;
+				}	
+			}
+		</style>
+	</head>
+	<body>
+		<table class = "sf">
+			<tr>
+				<td>
+					<a href = " index.html"><img src = "sflogo.png" class ="logo" /></a>
+					<div class="form1">
+						<table>
+							<tr>
+								<td style = "padding-left : 3px;"><a href="index.html" class = "text1">Email or Phone</a></td>
+								<td style = " width : 5px;" ></td>
+								<td style = "padding-left : 2px;"><a href="index.html" class = "text1">Password</a></td>
+							</tr>
+							<tr>
+								<td style = "padding :2px;"><input type = "text " class = "inp1" /></td>
+								<td style = " width : 5px;" ></td>
+								<td style = "padding :1px;"><input type = "password" class = "inp1" /></td>
+								<td style = " width : 4px;" ></td>
+								<td>
+									<input type ="submit" value = "Log In" class = "login"
+										onmouseover="this.style.backgroundColor='#3b5997';"
+										onmouseout = "this.style.backgroundColor='#4768b3';"
+										onclick="this.style.backgroundColor='#3b5997';"
+										onfocus="this.style.backgroundColor='#284071';"
+										onfocusout="this.style.backgroundColor='#4768b3';"/>
+								</td>
+							</tr>
+							<tr>
+							<td></td>
+							<td></td>
+							<td><a href="index.html"  class="hov_und" id="forg">Forgotten account?</a></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table class = "con">
+			<tr>
+				<td>
+					<div class = "stuff">
+						Spring Fest helps you to celebrate youth with all<br/>the friends in your life<br/>
+						<img src = "wmp.png" class="wmp" style = " position : relative;left:2px;bottom:1px;"/>
+					</div>
+					<div>
+						<table class="form2">
+							<tr >
+								<td style = " font-size : 36px;font-weight:bold;color:#333333;" colspan = "20">Create an account</td>
+							</tr>
+							<tr><td style="height : 5px"></td></tr>
+							<tr>
+								<td style = " font-size : 19px;color:#1d2129;" colspan = "20" >It's free and always will be.</td>
+							</tr>
+							<tr><td style="height : 15px"></td></tr>
+							<tr>
+								<td><input type = "text" value = "First name" class = "inp2" style = "width : 195px;" onfocus ="if(this.value == 'First name'){this.value=' ';this.style.color = '#000000';}else{this.style.color = '#000000';}"
+									onfocusout = "if((this.value =='')||(this.value==' ')||(this.value=='  ')||(this.value=='   ')||(this.value=='     ')){this.value = 'First name';this.style.color='#a8a8a8';}"
+									/></td>
+								<td style = "width:3px;"></td>
+								<td><input type = "text" value = "Surname" class = "inp2" style = "width : 195px;"onfocus ="if(this.value == 'Surname'){this.value=' ';this.style.color = '#000000';}else{this.style.color = '#000000';}"
+									onfocusout = "if((this.value =='')||(this.value==' ')||(this.value=='  ')||(this.value=='   ')||(this.value=='     ')){this.value = 'Surname';this.style.color='#a8a8a8';}"
+									/></td>
+							</tr>
+							<tr><td style="height:4px;"></td></tr>
+							<tr>
+								<td colspan = "20"><input type="text" value = "Mobile number or email address" class="inp2" style="width:402px" onfocus ="if(this.value == 'Mobile number or email address'){this.value=' ';this.style.color = '#000000';}else{this.style.color = '#000000';}"
+									onfocusout = "if((this.value =='')||(this.value==' ')||(this.value=='  ')||(this.value=='   ')||(this.value=='     ')){this.value = 'Mobile number or email address';this.style.color='#a8a8a8';}"
+									 /></td>
+							</tr>
+							<tr><td style="height:4px;"></td></tr>
+							<tr>
+								<td colspan = "20"><input type="text" value = "New password" class="inp2" style="width:402px" onfocus ="if(this.value == 'New password'){this.value=' ';this.style.color = '#000000';}else{this.style.color = '#000000';}"
+									onfocusout = "if((this.value =='')||(this.value==' ')||(this.value=='  ')||(this.value=='   ')||(this.value=='     ')){this.value = 'New password';this.style.color='#a8a8a8';}"
+									 /></td>
+							</tr>
+							<tr><td style="height:15px;"></td></tr>
+							<tr>
+								<td colspan = "20" ><div class="terms">By clicking Create an account, you agree to our <a class="hov_und" href="index.html">Terms</a> and confirm that you have read our <a class="hov_und" href="index.html">Data Policy</a>, including our <a class="hov_und" href="index.html">Cookie Use Policy</a>. You may receive SMS message notifications from Facebook and can opt out at any time.</div></td>
+							</tr>
+							<tr><td style="height:15px;"></td></tr>
+							<tr>
+								<td colspan = "20" >
+									<input type="submit" id="create" value="Create an account"
+									onmouseover = "this.style.background = 'linear-gradient(#69b662, #639b47 60%, #558a3a)';"
+									onmouseout = "this.style.background = 'linear-gradient(#62ab4f, #558a3a)';"/>
+								</td>
+							</tr>
+							<tr><td style="height:35px;"></td></tr>
+							<tr>
+								<td colspan = "20"><div style = "width:380px; color:#666666;font-size:13px;font-weight:bold;"><a class="hov_und" href="index.html">Create a Page</a> for a celebrity, band or business.</div></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table class = "footer">
+			<tr><td style = " border-bottom: 1px solid #d9d9d9;height:40px;"> 
+				<table style = "font-size:11px;color:#737373;" >
+					<tr>
+						<td>English (UK)</td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">ગુજરાતી</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">हिन्दी</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">मराठी</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">اردو</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">ਪੰਜਾਬੀ</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">தமிழ்</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">తెలుగు</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">বাংলা</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">മലയാളം</a></td><td style="width:3px"></td>
+						<td><a href="index.html" class = "footer">Español</a></td><td style="width:3px"></td>
+						<td style = "vertical-align: top;"><input type="submit" value = "+" 
+							style="height:20px;width:30px;font-size:15px;font-weight:bold;text-align:center;margin-top:5px;
+							background-color:#f5f6f8;border:1px solid #d2d1cf;border-radius:2px;"
+							onmouseover="this.style.backgroundColor = '#e8e8e9';"
+							onmouseout = "this.style.backgroundColor='#f5f6f8';"/></td>
+					</tr>
+				</table>
+			</td></tr>
+			<tr><td></td></tr>
+			<tr><td style="padding-left: 4px;padding-top:10px;">Arpit Patel © 2017</td></tr>
+		</table>
+	</body>
+</html>
